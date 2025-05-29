@@ -1,14 +1,21 @@
-#include "Server.hpp"
-#include <asio.hpp>
+#include "../include/Server.hpp"
 #include <iostream>
+#include <thread>
 
 int main() {
     try {
-        asio::io_context io_context;
-        Server server(io_context, 1234);
-        server.run();
+        auto server = std::make_shared<Server>();
+        server->socketStart();
+        server->serverListen();
+        
+        std::cout << "Server started. Waiting for connections...\n";
+        
+        server->acceptClient();
+        
     } catch (const std::exception& e) {
         std::cerr << "Fatal error: " << e.what() << std::endl;
+        return 1;
     }
+    
     return 0;
 }
