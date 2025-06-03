@@ -1,1 +1,64 @@
-CMakeLists.txt not found in C:\Users\Lenovo\Documents\Rafsya Ghaizan Athari\Universitas Indonesia\Semester 4\Algoritma Pemrograman dan Praktikum\Finpro_Alprog\Monitor-Level-Air-King-Fikra Select CMakeLists.txt
+"C:\Program Files\JetBrains\CLion 2025.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S "C:\Users\Lenovo\Documents\Rafsya Ghaizan Athari\Universitas Indonesia\Semester 4\Algoritma Pemrograman dan Praktikum\Finpro_Alprog\Monitor-Level-Air-King-Fikra" -B "C:\Users\Lenovo\Documents\Rafsya Ghaizan Athari\Universitas Indonesia\Semester 4\Algoritma Pemrograman dan Praktikum\Finpro_Alprog\Monitor-Level-Air-King-Fikra\cmake-build-debug"
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+CMake Warning in C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ya51h3/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ya51h3/CMakeFiles/cmTC_77549.dir/
+
+  has 246 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    CMakeCCompilerABI.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc.exe
+CMake Warning in C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777/CMakeFiles/cmTC_6c953.dir/
+
+  has 246 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    testCCompiler.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc.exe - broken
+CMake Error at C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777'
+    
+    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_6c953/fast
+    C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6c953.dir\build.make CMakeFiles/cmTC_6c953.dir/build
+    mingw32-make[1]: Entering directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777'
+    CMakeFiles\cmTC_6c953.dir\build.make:66: CMakeFiles/cmTC_6c953.dir/compiler_depend.make: No such file or directory
+    mingw32-make[1]: *** No rule to make target 'CMakeFiles/cmTC_6c953.dir/compiler_depend.make'.  Stop.
+    mingw32-make[1]: Leaving directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777'
+    mingw32-make: *** [Makefile:133: cmTC_6c953/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!

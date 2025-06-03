@@ -28,7 +28,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bafb32a3-0294-40f4-970a-b9baaf2374c7" name="Changes" comment="Penambahan data_manager.cpp dan main.cpp milik penyimpanan dan ekspor" />
+    <list default="true" id="bafb32a3-0294-40f4-970a-b9baaf2374c7" name="Changes" comment="Tes Commit Setelah Rebase">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/include/data_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/include/data_manager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/data_manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/data_manager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Rafsya" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +68,8 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/main.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/shared/include/config.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/shared/include/config.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -69,29 +79,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/main.cpp&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "Rafsya",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/main.cpp",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Documents\Rafsya Ghaizan Athari\Universitas Indonesia\Semester 4\Algoritma Pemrograman dan Praktikum\Finpro_Alprog\Monitor-Level-Air-King-Fikra\Penyimpanan  &amp; Ekspor Data\src" />
@@ -108,6 +118,9 @@
       <workItem from="1748150960790" duration="3847000" />
       <workItem from="1748168960227" duration="1359000" />
       <workItem from="1748173605844" duration="1001000" />
+      <workItem from="1748394249456" duration="1331000" />
+      <workItem from="1748936047842" duration="1528000" />
+      <workItem from="1748991987109" duration="1343000" />
     </task>
     <task id="LOCAL-00001" summary="Penyesuaian data_manager.h dengan folder shared">
       <option name="closed" value="true" />

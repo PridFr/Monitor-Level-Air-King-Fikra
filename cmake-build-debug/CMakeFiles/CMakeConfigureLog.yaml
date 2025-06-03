@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-95zfxd"
-      binary: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-95zfxd"
+      source: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ya51h3"
+      binary: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ya51h3"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,15 +71,15 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-95zfxd'
+        Change Dir: 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ya51h3'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_f031e/fast
-        C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f031e.dir\\build.make CMakeFiles/cmTC_f031e.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-95zfxd'
-        CMakeFiles\\cmTC_f031e.dir\\build.make:66: CMakeFiles/cmTC_f031e.dir/compiler_depend.make: No such file or directory
-        mingw32-make[1]: *** No rule to make target 'CMakeFiles/cmTC_f031e.dir/compiler_depend.make'.  Stop.
-        mingw32-make[1]: Leaving directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-95zfxd'
-        mingw32-make: *** [Makefile:133: cmTC_f031e/fast] Error 2
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_77549/fast
+        C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_77549.dir\\build.make CMakeFiles/cmTC_77549.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ya51h3'
+        CMakeFiles\\cmTC_77549.dir\\build.make:66: CMakeFiles/cmTC_77549.dir/compiler_depend.make: No such file or directory
+        mingw32-make[1]: *** No rule to make target 'CMakeFiles/cmTC_77549.dir/compiler_depend.make'.  Stop.
+        mingw32-make[1]: Leaving directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ya51h3'
+        mingw32-make: *** [Makefile:133: cmTC_77549/fast] Error 2
         
       exitCode: 2
   -
@@ -90,8 +90,8 @@ events:
     checks:
       - "Check for working C compiler: C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc.exe"
     directories:
-      source: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4049r2"
-      binary: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4049r2"
+      source: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777"
+      binary: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -100,122 +100,15 @@ events:
       variable: "CMAKE_C_COMPILER_WORKS"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4049r2'
+        Change Dir: 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_300bf/fast
-        C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_300bf.dir\\build.make CMakeFiles/cmTC_300bf.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4049r2'
-        CMakeFiles\\cmTC_300bf.dir\\build.make:66: CMakeFiles/cmTC_300bf.dir/compiler_depend.make: No such file or directory
-        mingw32-make[1]: *** No rule to make target 'CMakeFiles/cmTC_300bf.dir/compiler_depend.make'.  Stop.
-        mingw32-make[1]: Leaving directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4049r2'
-        mingw32-make: *** [Makefile:133: cmTC_300bf/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
-      
-      The C compiler identification is GNU, found in:
-        C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/3.31.6/CompilerIdC/a.exe
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/g++.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
-      
-      The CXX compiler identification is GNU, found in:
-        C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/3.31.6/CompilerIdCXX/a.exe
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j2g4vc"
-      binary: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j2g4vc"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j2g4vc'
-        
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_134ec/fast
-        C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_134ec.dir\\build.make CMakeFiles/cmTC_134ec.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j2g4vc'
-        CMakeFiles\\cmTC_134ec.dir\\build.make:66: CMakeFiles/cmTC_134ec.dir/compiler_depend.make: No such file or directory
-        mingw32-make[1]: *** No rule to make target 'CMakeFiles/cmTC_134ec.dir/compiler_depend.make'.  Stop.
-        mingw32-make[1]: Leaving directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j2g4vc'
-        mingw32-make: *** [Makefile:133: cmTC_134ec/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Check for working C compiler: C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc.exe"
-    directories:
-      source: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gzsqjm"
-      binary: "C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gzsqjm"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_COMPILER_WORKS"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gzsqjm'
-        
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_458c4/fast
-        C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_458c4.dir\\build.make CMakeFiles/cmTC_458c4.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gzsqjm'
-        CMakeFiles\\cmTC_458c4.dir\\build.make:66: CMakeFiles/cmTC_458c4.dir/compiler_depend.make: No such file or directory
-        mingw32-make[1]: *** No rule to make target 'CMakeFiles/cmTC_458c4.dir/compiler_depend.make'.  Stop.
-        mingw32-make[1]: Leaving directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gzsqjm'
-        mingw32-make: *** [Makefile:133: cmTC_458c4/fast] Error 2
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_6c953/fast
+        C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6c953.dir\\build.make CMakeFiles/cmTC_6c953.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777'
+        CMakeFiles\\cmTC_6c953.dir\\build.make:66: CMakeFiles/cmTC_6c953.dir/compiler_depend.make: No such file or directory
+        mingw32-make[1]: *** No rule to make target 'CMakeFiles/cmTC_6c953.dir/compiler_depend.make'.  Stop.
+        mingw32-make[1]: Leaving directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777'
+        mingw32-make: *** [Makefile:133: cmTC_6c953/fast] Error 2
         
       exitCode: 2
 ...

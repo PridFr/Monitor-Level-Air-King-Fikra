@@ -1,50 +1,37 @@
 #ifndef DATA_MANAGER_H
 #define DATA_MANAGER_H
 
-#include <tank.h>
-#include<config.h>
+#include "Tank.h"         // Menggunakan TankData dari Budi
+#include "common_types.h" // Untuk CriticalEvent
+#include "config.h"       // Untuk LOW_THRESHOLD, HIGH_THRESHOLD (dari #define)
 #include <string>
 #include <vector>
-#include <deque>
-#include <mutex>
+#include <fstream>        // Untuk file stream
 
 class DataManager {
 public:
-    //Constructor
-    DataManager(const std::string& binary_storage_path,
-        const std::string& json_report_path,
-        config& app_config);
-    ~DataManager();
+    // Konstruktor dengan path file penyimpanan
+    DataManager(const std::string& binary_file, const std::string& json_report_file);
 
-    //Read data yang telah ada di tank.h
-    void addReading(const Tank& reading); // nanti diskusi lagi soalnya belum jadi tank.h tanggal 21 Mei 2025
+    // Menerima data baru, memproses, dan langsung menyimpannya
+    void processAndStoreReading(const TankData& new_reading);
 
-    //Memuat data historis dari file biner
-    void loadFromBinary();
+    // Memuat semua data dari file biner (sederhana, untuk dilihat)
+    std::vector<TankData> loadAllReadingsFromBinary();
 
-    //Append data buffer ke file binner
-    void saveNewReadingsToBinary();
-
-    //Ekspor data yang memiliki kondisi kritis ke file JSON
-    void exportCriticalDataToJson();
+    // Mengekspor semua kondisi kritis yang tercatat ke JSON
+    void exportAllCriticalEventsToJson();
 
 private:
-    std::string binary_storage_path_;
-    std::string  json_report_path_;
-    Config& config_; //Referensi ke objek config tapi masih belum ada
+    std::string binary_file_path;
+    std::string json_report_file_path;
 
-    //buffer utama buat disimpan ke objek tank
-    std::deque<Tank> reading_buffer_;//Ambil tipe data dari tank.h
-    std::vector<CriticalPeriod> critical_periods_; //log kondisi kritis tapi 21 mei tank h nyta belum di update ke main
+    // Untuk menyimpan kondisi kritis di memori sebelum diekspor
+    std::vector<CriticalEvent> critical_event_log;
 
-    //mutex untuk menghindari kesalahan thread
-    mutable std::mutex mutex_;
-
-    size_t unsaved_readings_count_ = 0;
-    const size_t SAVE_BATCH_SIZE = 10;
-
-    void checkForCriticalPeriod(const Tank& reading);
-
-
+    // Helper internal
+    void appendToBinaryFile(const TankData& data_to_save);
+    void logCriticalEvent(const TankData& critical_data);
 };
-#endif //DATA_MANAGER_H
+
+#endif
