@@ -28,7 +28,7 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/g++.exe
+CMAKE_CXX_COMPILER:STRING=C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/g++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -39,7 +39,7 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=C:/Program Files/JetBrains/CLion 2025.1/bin/mingw
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc-ranlib.exe
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc.exe
+CMAKE_C_COMPILER:STRING=C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
