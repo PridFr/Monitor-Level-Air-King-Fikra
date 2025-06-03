@@ -29,8 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bafb32a3-0294-40f4-970a-b9baaf2374c7" name="Changes" comment="revisi data_manager.h, data_manager.cpp, dan main.cpp">
-      <change beforePath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/data_manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/data_manager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +101,13 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Documents\Rafsya Ghaizan Athari\Universitas Indonesia\Semester 4\Algoritma Pemrograman dan Praktikum\Finpro_Alprog\Monitor-Level-Air-King-Fikra\Penyimpanan  &amp; Ekspor Data\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

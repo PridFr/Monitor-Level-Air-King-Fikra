@@ -2,10 +2,10 @@
 -- The C compiler identification is GNU 13.1.0
 -- The CXX compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
-CMake Warning in C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ya51h3/CMakeLists.txt:
+CMake Warning in C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u53mwn/CMakeLists.txt:
   The object file directory
 
-    C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ya51h3/CMakeFiles/cmTC_77549.dir/
+    C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u53mwn/CMakeFiles/cmTC_c9517.dir/
 
   has 246 characters.  The maximum full path to an object file is 250
   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
@@ -18,10 +18,10 @@ CMake Warning in C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Ind
 
 -- Detecting C compiler ABI info - failed
 -- Check for working C compiler: C:/Program Files/JetBrains/CLion 2025.1/bin/mingw/bin/gcc.exe
-CMake Warning in C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777/CMakeLists.txt:
+CMake Warning in C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sznh7a/CMakeLists.txt:
   The object file directory
 
-    C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777/CMakeFiles/cmTC_6c953.dir/
+    C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sznh7a/CMakeFiles/cmTC_089dd.dir/
 
   has 246 characters.  The maximum full path to an object file is 250
   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
@@ -42,15 +42,15 @@ CMake Error at C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/c
 
   It fails with the following output:
 
-    Change Dir: 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777'
+    Change Dir: 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sznh7a'
     
-    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_6c953/fast
-    C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6c953.dir\build.make CMakeFiles/cmTC_6c953.dir/build
-    mingw32-make[1]: Entering directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777'
-    CMakeFiles\cmTC_6c953.dir\build.make:66: CMakeFiles/cmTC_6c953.dir/compiler_depend.make: No such file or directory
-    mingw32-make[1]: *** No rule to make target 'CMakeFiles/cmTC_6c953.dir/compiler_depend.make'.  Stop.
-    mingw32-make[1]: Leaving directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3rh777'
-    mingw32-make: *** [Makefile:133: cmTC_6c953/fast] Error 2
+    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_089dd/fast
+    C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_089dd.dir\build.make CMakeFiles/cmTC_089dd.dir/build
+    mingw32-make[1]: Entering directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sznh7a'
+    CMakeFiles\cmTC_089dd.dir\build.make:66: CMakeFiles/cmTC_089dd.dir/compiler_depend.make: No such file or directory
+    mingw32-make[1]: *** No rule to make target 'CMakeFiles/cmTC_089dd.dir/compiler_depend.make'.  Stop.
+    mingw32-make[1]: Leaving directory 'C:/Users/Lenovo/Documents/Rafsya Ghaizan Athari/Universitas Indonesia/Semester 4/Algoritma Pemrograman dan Praktikum/Finpro_Alprog/Monitor-Level-Air-King-Fikra/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sznh7a'
+    mingw32-make: *** [Makefile:133: cmTC_089dd/fast] Error 2
     
     
 
