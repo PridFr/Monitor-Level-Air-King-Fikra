@@ -28,14 +28,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bafb32a3-0294-40f4-970a-b9baaf2374c7" name="Changes" comment="Tes Commit Setelah Rebase">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/include/data_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/include/data_manager.h" afterDir="false" />
+    <list default="true" id="bafb32a3-0294-40f4-970a-b9baaf2374c7" name="Changes" comment="revisi data_manager.h, data_manager.cpp, dan main.cpp">
       <change beforePath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/data_manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/data_manager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Penyimpanan  &amp; Ekspor Data/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +115,7 @@
       <workItem from="1748173605844" duration="1001000" />
       <workItem from="1748394249456" duration="1331000" />
       <workItem from="1748936047842" duration="1528000" />
-      <workItem from="1748991987109" duration="1343000" />
+      <workItem from="1748991987109" duration="1668000" />
     </task>
     <task id="LOCAL-00001" summary="Penyesuaian data_manager.h dengan folder shared">
       <option name="closed" value="true" />
@@ -138,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748168875203</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="revisi data_manager.h, data_manager.cpp, dan main.cpp">
+      <option name="closed" value="true" />
+      <created>1748993662766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748993662766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Penyesuaian data_manager.h dengan folder shared" />
     <MESSAGE value="Penambahan data_manager.cpp dan main.cpp milik penyimpanan dan ekspor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Penambahan data_manager.cpp dan main.cpp milik penyimpanan dan ekspor" />
+    <MESSAGE value="revisi data_manager.h, data_manager.cpp, dan main.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="revisi data_manager.h, data_manager.cpp, dan main.cpp" />
   </component>
 </project>
