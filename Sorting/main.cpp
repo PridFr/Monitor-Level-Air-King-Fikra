@@ -38,6 +38,8 @@ int main() {
     long long end_ts = 1678886400LL;
     std::vector<CriticalEvent> time_range_events = EventProcessor::findEventsInTimeRange(events, start_ts, end_ts);
     printEvents("Kejadian Kritis antara timestamp " + std::to_string(start_ts) + " dan " + std::to_string(end_ts) + ":", time_range_events);
+
+    printf ("Demikian urutan data yang di deteksi");
     
     return 0;
 }
