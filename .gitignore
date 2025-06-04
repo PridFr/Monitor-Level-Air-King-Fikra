@@ -8,3 +8,5 @@ CMakeLists.txt
 
 lib/
 test/
+build/
+test/
