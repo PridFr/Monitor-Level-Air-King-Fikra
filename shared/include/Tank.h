@@ -2,12 +2,11 @@
 #define TANK_H
 
 #include <string>
+#include "./config.h"
 #include <stdexcept>
 #include <ctime>
 
 // Define threshold constants
-constexpr double LOW_THRESHOLD = 20.0;
-constexpr double HIGH_THRESHOLD = 80.0;
 
 // Tank status enum
 enum class TankStatus {
