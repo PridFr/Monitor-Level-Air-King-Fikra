@@ -11,6 +11,7 @@
 #include <ws2tcpip.h>
 #include <sstream>
 #include "Tank.h"
+#include "../../Penyimpanan  & Ekspor Data/include/data_manager.h"
 
 // Forward declarations
 class ThreadPool;
@@ -64,6 +65,7 @@ private:
     struct addrinfo hints;
     int result_idx;
     std::unique_ptr<ThreadPool> pool;
+    std::unique_ptr<DataManager> data_manager;
 
     // Collection untuk menyimpan data tank
     std::vector<TankData> tank_data_collection;
@@ -75,6 +77,7 @@ public:
     void socketStart();
     void serverListen();
     void acceptClient();
+    DataManager* getDataManager() { return data_manager.get(); }
 
     
     // Fungsi untuk akses data

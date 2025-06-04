@@ -96,6 +96,7 @@ void Session::handle_client() {
                 
                 if (tank_data.is_valid()) {
                     handle_tank_data(tank_data);
+                    server_ptr->getDataManager()->processAndStoreReading(tank_data);
                     server_ptr->add_tank_data(tank_data);
                     response = "Data valid and processed";
                 } else {
@@ -139,6 +140,7 @@ Server::Server() : server_soc(INVALID_SOCKET), result(nullptr), pool(std::make_u
         WSACleanup();
         throw std::runtime_error("getaddrinfo failed with error: " + std::to_string(result_idx));
     }
+    data_manager = std::make_unique<DataManager>("tank_data.bin", "critical_report.json");
 }
 
 void Server::socketStart() {
