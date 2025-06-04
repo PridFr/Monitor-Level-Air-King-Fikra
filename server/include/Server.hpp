@@ -10,10 +10,11 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <sstream>
-#include "../shared/include/Tank.h"
+#include "Tank.h"
 
 // Forward declarations
 class ThreadPool;
+class Server;
 class Session;
 //Class thread pool
 class ThreadPool {

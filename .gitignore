@@ -3,7 +3,7 @@ data/
 *.out
 *.o
 *.exe
-CMakeLists.txt
+##CMakeLists.txt
 .vscode/
 
 lib/
