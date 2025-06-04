@@ -10,4 +10,4 @@ dan rusak; jika terlalu tinggi, risiko meluap mengganggu peralatan di sekitarnya
 beberapa tangki dijalankan bersamaan pada waktu yang sama, monitoring manual menjadi
 tidak praktis dan rawan kelalaian. Oleh karena itu, diperlukan sistem terdistribusi di mana
 setiap sensor level (client) otomatis mengirim bacaan ke server monitoring, memungkinkan
-deteksi dan penanganan kondisi kritis secara lebih tepat waktu. 
+deteksi dan penanganan kondisi kritis secara lebih tepat waktu.
