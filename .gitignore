@@ -3,5 +3,10 @@ data/
 *.out
 *.o
 *.exe
-
+CMakeLists.txt
 .vscode/
+
+lib/
+test/
+build/
+test/
