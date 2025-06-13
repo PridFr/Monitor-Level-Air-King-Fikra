@@ -40,7 +40,7 @@ void DataManager::logCriticalEvent(const TankData& critical_data) {
     event.timestamp_event = critical_data.get_formatted_time(); // Gunakan helper dari TankData
     event.level_at_event = critical_data.level;
     critical_event_log.push_back(event);
-    std::cout << "DM_LOG: Critical event logged for " << critical_data.tank_id << " - " << event.status_event << std::endl;
+    // Tidak ada cout di sini
 }
 
 // Menerima data, menentukan status, menyimpan, dan log jika kritis
@@ -61,9 +61,7 @@ void DataManager::processAndStoreReading(const TankData& raw_reading) {
     if (current_reading.status == TankStatus::CRIT_LOW || current_reading.status == TankStatus::CRIT_HIGH) {
         logCriticalEvent(current_reading);
     }
-    std::cout << "DM_PROCESS: Processed " << current_reading.tank_id
-              << ", Lvl: " << current_reading.level
-              << ", Sts: " << current_reading.get_status_string() << std::endl;
+    // Tidak ada cout di sini
 }
 
 // Memuat semua data dari file biner (sangat sederhana)
@@ -71,7 +69,6 @@ std::vector<TankData> DataManager::loadAllReadingsFromBinary() {
     std::vector<TankData> all_data;
     std::ifstream bin_in(binary_file_path, std::ios::binary);
     if (!bin_in.is_open()) {
-        std::cout << "DM_LOAD: Binary file not found or cannot open: " << binary_file_path << std::endl;
         return all_data; // Kembalikan vektor kosong
     }
 
@@ -100,7 +97,6 @@ std::vector<TankData> DataManager::loadAllReadingsFromBinary() {
         all_data.push_back(temp_data);
     }
     bin_in.close();
-    std::cout << "DM_LOAD: Loaded " << all_data.size() << " records from binary file." << std::endl;
     return all_data;
 }
 
@@ -111,7 +107,7 @@ void DataManager::exportAllCriticalEventsToJson() {
         return;
     }
 
-    json json_output = critical_event_log; // Menggunakan NLOHMANN_DEFINE_TYPE_INTRUSIVE dari CriticalEvent
+    nlohmann::json json_output = critical_event_log; // Menggunakan NLOHMANN_DEFINE_TYPE_INTRUSIVE dari CriticalEvent
 
     std::ofstream json_out(json_report_file_path);
     if (!json_out.is_open()) {
@@ -121,4 +117,24 @@ void DataManager::exportAllCriticalEventsToJson() {
     json_out << std::setw(4) << json_output << std::endl; // Pretty print
     json_out.close();
     std::cout << "DM_EXPORT: Exported " << critical_event_log.size() << " critical events to " << json_report_file_path << std::endl;
+}
+
+void DataManager::showCriticalEventLogTable() {
+    if (critical_event_log.empty()) {
+        std::cout << "Tidak ada critical event log yang tercatat.\n";
+        return;
+    }
+    std::cout << "-------------------------------------------------------------\n";
+    std::cout << "| No | Tank ID | Level | Status     | Timestamp            |\n";
+    std::cout << "-------------------------------------------------------------\n";
+    int idx = 1;
+    for (const auto& e : critical_event_log) {
+        std::cout << "| " << idx++
+                  << " | " << e.tank_id_event
+                  << " | " << e.level_at_event
+                  << " | " << e.status_event
+                  << " | " << e.timestamp_event
+                  << " |\n";
+    }
+    std::cout << "-------------------------------------------------------------\n";
 }

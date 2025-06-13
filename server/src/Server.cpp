@@ -76,40 +76,38 @@ TankData Session::parse_data(const std::string& data) {
     return tank_data;
 }
 
-void Session::handle_tank_data(const TankData& data) {
-    std::cout << "Tank ID: " << data.tank_id 
-              << "\nLevel: " << data.level 
-              << "\nStatus: " << data.get_status_string()
-              << "\nTime: " << data.get_formatted_time() << std::endl;
-}
+
+
 
 void Session::handle_client() {
     while (true) {
         int bytes_received = recv(client_socket, buffer, BUFFER_SIZE, 0);
         if (bytes_received > 0) {
             std::string received_data(buffer, bytes_received);
-            std::cout << "Raw data received: " << received_data << std::endl;
-            
+            server_ptr->addActivityLog("Data received: " + received_data);
             std::string response;
             try {
                 TankData tank_data = parse_data(received_data);
                 
                 if (tank_data.is_valid()) {
-                    handle_tank_data(tank_data);
-                    server_ptr->getDataManager()->processAndStoreReading(tank_data);
                     server_ptr->add_tank_data(tank_data);
+                    server_ptr->processAllTankData();
                     response = "Data valid and processed";
+                    server_ptr->addActivityLog("Data valid: " + tank_data.tank_id + ", level: " + std::to_string(tank_data.level));
                 } else {
                     response = "Data validation failed";
+                    server_ptr->addActivityLog("Data validation failed: " + received_data);
                 }
             }
             catch (const TankDataError& e) {
                 std::cerr << "Data error: " << e.what() << std::endl;
                 response = std::string("Error: ") + e.what();
+                server_ptr->addActivityLog(std::string("Data error: ") + e.what());
             }
             catch (const std::exception& e) {
                 std::cerr << "Unexpected error: " << e.what() << std::endl;
                 response = "Internal server error";
+                server_ptr->addActivityLog(std::string("Unexpected error: ") + e.what());
             }
             
             send(client_socket, response.c_str(), response.length(), 0);
@@ -176,11 +174,11 @@ void Server::acceptClient() {
         SOCKET client_socket = accept(server_soc, NULL, NULL);
         if (client_socket == INVALID_SOCKET) {
             printf("accept failed: %d\n", WSAGetLastError());
+            addActivityLog("Accept client failed: " + std::to_string(WSAGetLastError()));
             continue;
         }
-
         std::cout << "New client connected!" << std::endl;
-        
+        addActivityLog("New client connected.");
         pool->enqueue([self = shared_from_this(), client_socket]() {
             Session session(client_socket,self);
             session.handle_client();
@@ -196,6 +194,68 @@ void Server::add_tank_data(const TankData& data) {
 std::vector<TankData> Server::get_tank_data() const {
     std::lock_guard<std::mutex> lock(data_mutex);
     return tank_data_collection;
+}
+
+void Server::processAllTankData() {
+    std::vector<TankData> data_copy;
+    {
+        std::lock_guard<std::mutex> lock(data_mutex);
+        data_copy = tank_data_collection;
+    }
+
+    for (const auto& tank_data : data_copy) {
+        pool->enqueue([this, tank_data]() {
+            if (data_manager) {
+                data_manager->processAndStoreReading(tank_data);
+            }
+        });
+    }
+}
+
+void Server::showTankLogTable() {
+    if (!data_manager) {
+        std::cout << "DataManager not initialized.\n";
+        return;
+    }
+    auto all_data = data_manager->loadAllReadingsFromBinary();
+    if (all_data.empty()) {
+        std::cout << "No tank data found in binary log.\n";
+        return;
+    }
+    // Header
+    std::cout << "-------------------------------------------------------------\n";
+    std::cout << "| No | Tank ID | Level | Status     | Timestamp            |\n";
+    std::cout << "-------------------------------------------------------------\n";
+    int idx = 1;
+    for (const auto& d : all_data) {
+        std::cout << "| " << idx++
+                  << " | " << d.tank_id
+                  << " | " << d.level
+                  << " | " << d.get_status_string()
+                  << " | " << d.get_formatted_time()
+                  << " |\n";
+    }
+    std::cout << "-------------------------------------------------------------\n";
+}
+
+void Server::addActivityLog(const std::string& msg) {
+    std::lock_guard<std::mutex> lock(activity_log_mutex);
+    activity_log.push_back(msg);
+    if (activity_log.size() > 1000) activity_log.erase(activity_log.begin()); // batasi log
+}
+
+void Server::showActivityLog() {
+    std::lock_guard<std::mutex> lock(activity_log_mutex);
+    if (activity_log.empty()) {
+        std::cout << "Tidak ada aktivitas yang tercatat.\n";
+        return;
+    }
+    std::cout << "========== LOG AKTIVITAS ==========" << std::endl;
+    int idx = 1;
+    for (const auto& log : activity_log) {
+        std::cout << idx++ << ". " << log << std::endl;
+    }
+    std::cout << "===================================" << std::endl;
 }
 
 Server::~Server() {

@@ -64,7 +64,7 @@ int main() {
 
     while (true) {
         // Fungsi osilasi (sinus), output antara 20–80
-        double level = 50.0 + 30.0 * std::sin(time);
+        double level = 12.0 +  12.0 * std::sin(time);
         std::string level_str = std::to_string(level);
 
         std::string data = tank_id + "," + level_str;

@@ -10,8 +10,10 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <sstream>
+#include <vector>
+#include <string>
 #include "Tank.h"
-#include "../../Penyimpanan  & Ekspor Data/include/data_manager.h"
+#include "data_manager.h"
 
 // Forward declarations
 class ThreadPool;
@@ -71,18 +73,30 @@ private:
     std::vector<TankData> tank_data_collection;
     mutable std::mutex data_mutex;  // Untuk thread-safe access ke collection
 
+    // Activity log
+    std::vector<std::string> activity_log;
+    std::mutex activity_log_mutex;
+
 public:
     Server();
     ~Server();
     void socketStart();
     void serverListen();
     void acceptClient();
-    DataManager* getDataManager() { return data_manager.get(); }
+    void processAllTankData();
 
-    
     // Fungsi untuk akses data
     void add_tank_data(const TankData& data);
     std::vector<TankData> get_tank_data() const;
+
+    // Tambahan: fungsi untuk menampilkan log tabel dan getter data_manager
+    void showTankLogTable();
+    void showCriticalEventLogTable() { if (data_manager) data_manager->showCriticalEventLogTable(); }
+    DataManager* getDataManager() { return data_manager.get(); }
+
+    // Fungsi untuk menambah dan menampilkan log aktivitas
+    void addActivityLog(const std::string& msg);
+    void showActivityLog();
 };
 
 #endif

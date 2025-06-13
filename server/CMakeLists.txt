@@ -1,28 +1,27 @@
-# Ambil semua source file kecuali main.cpp
-file(GLOB SERVER_SOURCES src/*.cpp)
-list(REMOVE_ITEM SERVER_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
+cmake_minimum_required(VERSION 3.10)
+project(ServerApp)
 
-set(MAIN_SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
-# Buat library dari semua implementasi selain main
-add_library(server_lib ${SERVER_SOURCES})
-
-target_include_directories(server_lib PUBLIC
-    ${PROJECT_SOURCE_DIR}/server/include
-    ${PROJECT_SOURCE_DIR}/shared/include
+# Source files
+file(GLOB SERVER_SRC
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../shared/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../Penyimpanan  & Ekspor Data/src/*.cpp"
 )
 
-# Tambah library socket kalau di Windows
-if(WIN32)
-    target_link_libraries(server_lib PRIVATE ws2_32)
+# Include directories
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../shared/include
+    "${CMAKE_CURRENT_SOURCE_DIR}/../Penyimpanan  & Ekspor Data/include"
+)
+
+# Add executable
+add_executable(main_executable ${SERVER_SRC})
+
+# Link with ws2_32 for Windows sockets
+if (WIN32)
+    target_link_libraries(main_executable ws2_32)
 endif()
-
-# Buat executable dari main.cpp
-add_executable(main_executable ${MAIN_SOURCE})
-
-target_link_libraries(main_executable PRIVATE server_lib)
-
-target_include_directories(main_executable PRIVATE
-    ${PROJECT_SOURCE_DIR}/server/include
-    ${PROJECT_SOURCE_DIR}/shared/include
-)
