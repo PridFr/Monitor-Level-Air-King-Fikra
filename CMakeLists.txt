@@ -31,6 +31,8 @@ target_link_libraries(server server_lib)
 # ----------- Client Executable -----------
 add_executable(client
     client/src/client.cpp
+        Sorting/include/data_operations.h
+        Sorting/src/data_operations.cpp
 )
 target_include_directories(client PRIVATE
     shared/include

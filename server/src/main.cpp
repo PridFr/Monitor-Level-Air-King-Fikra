@@ -1,4 +1,5 @@
 #include "../include/Server.hpp"
+#include "data_operations.h"
 #include <iostream>
 #include <thread>
 #include <set>
