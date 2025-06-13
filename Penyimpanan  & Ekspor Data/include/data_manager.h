@@ -21,6 +21,7 @@ public:
 
     // Mengekspor semua kondisi kritis yang tercatat ke JSON
     void exportAllCriticalEventsToJson();
+    void showCriticalEventLogTable();
 
 private:
     std::string binary_file_path;
