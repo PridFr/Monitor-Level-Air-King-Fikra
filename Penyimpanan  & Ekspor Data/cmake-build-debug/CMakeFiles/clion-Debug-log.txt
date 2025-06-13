@@ -1,1 +1,0 @@
-CMakeLists.txt not found in C:\Users\Lenovo\Documents\Rafsya Ghaizan Athari\Universitas Indonesia\Semester 4\Algoritma Pemrograman dan Praktikum\Finpro_Alprog\Monitor-Level-Air-King-Fikra\Penyimpanan  & Ekspor Data Select CMakeLists.txt
