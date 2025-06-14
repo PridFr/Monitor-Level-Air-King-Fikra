@@ -20,11 +20,61 @@ int main() {
         // Thread menu interaktif
         std::thread([server](){
             while (true) {
-                std::cout << "\nKetik 'data' untuk tabel data tank, 'log' untuk log aktivitas, 'refresh' untuk reload data: ";
+                std::cout << "\nMenu: data | log | refresh\n> ";
                 std::string input;
                 std::getline(std::cin, input);
                 if (input == "data") {
-                    server->showTankLogTable();
+                    while (true) {
+                        std::cout << "\nData Menu: show | sort_level | sort_time | filter_id | filter_status | back\n> ";
+                        std::string dinput;
+                        std::getline(std::cin, dinput);
+                        if (dinput == "show") {
+                            server->showTankLogTable();
+                        } else if (dinput == "sort_level") {
+                            auto all_data = server->getDataManager()->loadAllReadingsFromBinary();
+                            DataOps::mergeSort(all_data, DataOps::Comparators::byLevelAsc);
+                            std::cout << "Data tank diurutkan berdasarkan level (naik):\n";
+                            int idx = 1;
+                            for (const auto& d : all_data) {
+                                std::cout << idx++ << ". " << d.tank_id << " | " << d.level << " | " << d.get_status_string() << " | " << d.get_formatted_time() << std::endl;
+                            }
+                        } else if (dinput == "sort_time") {
+                            auto all_data = server->getDataManager()->loadAllReadingsFromBinary();
+                            DataOps::mergeSort(all_data, DataOps::Comparators::byTimestampAsc);
+                            std::cout << "Data tank diurutkan berdasarkan waktu (naik):\n";
+                            int idx = 1;
+                            for (const auto& d : all_data) {
+                                std::cout << idx++ << ". " << d.tank_id << " | " << d.level << " | " << d.get_status_string() << " | " << d.get_formatted_time() << std::endl;
+                            }
+                        } else if (dinput == "filter_id") {
+                            std::cout << "Masukkan tank_id: ";
+                            std::string tid; std::getline(std::cin, tid);
+                            auto all_data = server->getDataManager()->loadAllReadingsFromBinary();
+                            auto filtered = DataOps::findByTankId(all_data, tid);
+                            std::cout << "Data untuk tank_id '" << tid << "':\n";
+                            int idx = 1;
+                            for (const auto& d : filtered) {
+                                std::cout << idx++ << ". " << d.tank_id << " | " << d.level << " | " << d.get_status_string() << " | " << d.get_formatted_time() << std::endl;
+                            }
+                        } else if (dinput == "filter_status") {
+                            std::cout << "Masukkan status (NORMAL/CRIT_LOW/CRIT_HIGH): ";
+                            std::string s; std::getline(std::cin, s);
+                            TankStatus st;
+                            if (s == "NORMAL") st = TankStatus::NORMAL;
+                            else if (s == "CRIT_LOW") st = TankStatus::CRIT_LOW;
+                            else if (s == "CRIT_HIGH") st = TankStatus::CRIT_HIGH;
+                            else { std::cout << "Status tidak valid!\n"; continue; }
+                            auto all_data = server->getDataManager()->loadAllReadingsFromBinary();
+                            auto filtered = DataOps::findByStatus(all_data, st);
+                            std::cout << "Data dengan status '" << s << "':\n";
+                            int idx = 1;
+                            for (const auto& d : filtered) {
+                                std::cout << idx++ << ". " << d.tank_id << " | " << d.level << " | " << d.get_status_string() << " | " << d.get_formatted_time() << std::endl;
+                            }
+                        } else if (dinput == "back") {
+                            break;
+                        }
+                    }
                 } else if (input == "log") {
                     server->showActivityLog();
                 } else if (input == "refresh") {

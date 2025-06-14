@@ -8,14 +8,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(server_lib
     server/src/Server.cpp
     "Penyimpanan  & Ekspor Data/src/data_manager.cpp"
-    # Tambahkan file sumber lain jika ada
+    Sorting/src/data_operations.cpp
 )
 
 target_include_directories(server_lib PUBLIC
-    server/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/server/include
     shared/include
     "${CMAKE_CURRENT_SOURCE_DIR}/Penyimpanan  & Ekspor Data/include"
-    lib/nlohmann
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/nlohmann
+    ${CMAKE_CURRENT_SOURCE_DIR}/Sorting/include
 )
 
 if (WIN32)
@@ -37,6 +38,7 @@ add_executable(client
 target_include_directories(client PRIVATE
     shared/include
     lib/nlohmann
+    Sorting/include
 )
 if (WIN32)
     target_link_libraries(client ws2_32)
